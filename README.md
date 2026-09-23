@@ -1,4 +1,4 @@
-# SOC Homelab: Multi-Layer Threat Detection & Incident Response Pipeline
+# SOC-Homelab: Multi-Layer Threat Detection & Incident Response Pipeline
 
 A hands-on simulation of a Security Operations Center (SOC) built on a single computer. This project collects and connects activity from Windows endpoints (Sysmon), suspicious network traffic alerts (Suricata), and firewall blocks (pfSense) into one centralized monitoring dashboard (Wazuh). It also automatically checks external threat databases (like VirusTotal and AbuseIPDB) to instantly flag dangerous files and malicious IP addresses.
 
