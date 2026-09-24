@@ -24,24 +24,28 @@ A hands-on simulation of a Security Operations Center (SOC) built on a single co
                                                            └─► AlienVault OTX API
 ```
 
+<p align="center">
+  <img src="img/wazuh-server.gif" alt="Wazuh SIEM Dashboard Overview" width="750">
+</p>
+
 ---
 
 ## Lab Documentation Guides
 
 The laboratory implementation is structured into three comprehensive operational guides available in the [`docs/`](docs/) directory:
 
-1. **[Guide 1: Deployment & Integration](docs/1-SOC%20Home%20Lab%20Deployment%20%26%20Integration.pdf)**
+1. **[Guide 1: Deployment & Integration](docs/1_deployment_integration_guide.md)**
    * Network segmentation and Bridged Virtual Machine deployment (VirtualBox).
    * Host endpoint configuration: Sysmon installation and Suricata live PCAP capture binding.
    * Wazuh Agent setup, log harvesting channels, and pfSense Syslog forwarder activation.
    * Threat Intelligence daemon integration via `ossec.conf` (VirusTotal, AbuseIPDB, AlienVault OTX).
 
-2. **[Guide 2: Initialization & Execution](docs/2-SOC%20Home%20Lab%20Initialization%20%26%20Execution.pdf)**
+2. **[Guide 2: Initialization & Execution](docs/2_initialization_execution_guide.md)**
    * Deterministic startup sequence across hypervisor instances.
    * Health verification commands for Wazuh daemons, indexer status, and UDP 514 listeners.
    * Windows endpoint telemetry validation (`Sysmon64`, `WazuhSvc`) and live NIDS packet processing.
 
-3. **[Guide 3: Threat Emulation & Detection Verification](docs/3-SOC%20Home%20Lab%20Threat%20Emulation%20%26%20Detection%20Verification%20Guide.pdf)**
+3. **[Guide 3: Threat Emulation & Detection Verification](docs/3_threat_emulation_detection_guide.md)**
    * External reconnaissance and firewall deny auditing via pfSense `filterlog`.
    * SSH credential stuffing emulation with THC-Hydra vs. Windows Security Event ID 4625.
    * Real-time malware detection via FIM hash queries against 66 VirusTotal engines.
